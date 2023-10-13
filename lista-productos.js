@@ -25,7 +25,7 @@ for(product of products) {
     if(product.precio <= 5){
         productosBaratos.push(product.nombre)
     }
-    if(product.precio > 0 && product.cantidad > 0){
+    if(product.precio > 0 || product.cantidad > 0){
         productosMayoresaCero.push(product)
         promedioProductos += product.precio
     }
